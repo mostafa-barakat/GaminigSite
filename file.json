@@ -1,0 +1,14 @@
+{
+
+    "Key":"Value",
+    "String":"mostafa",
+    "number":"20",
+    "string" : "Gaza",
+    "object":{
+        "one":"one",
+        "tow":"toe"
+    },
+    "Array":["one" , "Tow " , "Three"],
+    "boolean":true,
+    "null":null
+}  

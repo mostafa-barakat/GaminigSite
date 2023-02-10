@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- ==========================FONT AOWSOM========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<!-- ==========================FONT FAMILY========================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<!-- ==========================FONT FAMILY========================== -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,400;1,700&display=swap" rel="stylesheet"/>
+
+    <link rel="icon" type="image/x-icon" href="./image/games.png">
+    <title>GAMES</title>
+  </head>
+  <body>
+<!-- ==========================START HAEDER========================== -->
+  <header id="header">
+    <div class="container">
+      <a href="#"> <img src="./image/5b680f7ddc6fa8394a12fc7f_logo-spoon-white (1).svg" alt=""/></a>
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#gallery">Gallery</a>
+        <!-- <a href="#newtow">New Two</a> -->
+        <!-- <a href="#push">Push</a> -->
+        <!-- <a href="#play">Play</a> -->
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="signin-sigup">
+        <button class="signin" href="#" onclick="document.getElementById('id01').style.display='block'"> Log In</button>
+        <button class="signup" href="#" onclick="document.getElementById('id02').style.display='block'"> Sign Up</button>
+      </div>  
+    </div>
+  </header>
+<!-- ==========================END HAEDER========================== -->
+
+
+<!-- ==========================START LOGIN========================== -->
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="./image/93868.jpg" width="400px" height="500px" alt="Avatar" class="avatar">
+    </div>
+    <div class="container-login">
+      <div class="text-login">
+        <h1>Welcome Back</h1>
+        <p class="text-one">Login into your account</p>
+        <p class="text-tow">Dont have an account? <span> <button>Sign up</button></span> </p>
+      </div>
+        <div class="form-login">
+          <div class="inpot-contener-login">
+            <label class="email" for="uname"><b>Email</b></label>
+            <input class="input-field-login" type="email" placeholder="Eample@gmail.com" name="email" required>
+          </div>
+          <div class="inpot-contener-login">
+            <label for="psw"><b>Password</b></label>
+            <input class="input-field-login" type="password" placeholder="**********" name="psw" required>
+          </div>
+          <label>
+            <input  type="checkbox" name="remember"> Remember me
+          </label>
+          <div class="submit">
+            <button type="submit">Login</button>
+          </div>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <br>
+          <div class="forget">
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </div>
+    </div>
+  </form>
+</div>
+<!-- ==========================END LOGIN========================== -->
+
+
+<!-- ==========================START SIGNUP========================== -->
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="./image/93868.jpg" width="400px" height="500px" alt="Avatar" class="avatar">
+    </div>
+    <div class="container-signup">
+      <div class="text-signup">
+        <h1>Create an account</h1>
+        <p>Already an account?<span> <button>Log in</button></span> </p>
+      </div>
+        <div class="form-signup">
+          <div class="inpot-contener-signup">
+            <label class="name" for="uname"><b>Full Name</b></label>
+            <input class="input-field-signup" type="name" placeholder="John Well" name="name" required>
+          </div>
+          <div class="inpot-contener-signup">
+            <label class="email" for="email"><b>Email</b></label>
+            <input class="input-field-signup" type="email" placeholder="Eample@gmail.com" name="email" required>
+          </div>
+          <div class="inpot-contener-signup">
+            <label for="phone"><b>Phone</b></label>
+            <input class="input-field-signup" type="phone" placeholder="05911223344" name="phone" required>
+          </div>
+          <div class="inpot-contener-signup">
+            <label for="psw"><b>Password</b></label>
+            <input class="input-field-signup" type="password" placeholder="**********" name="psw" required>
+          </div>
+          <label>
+            <input  type="checkbox" name="remember"> I have read and agree to all <span><a href="#" class="condition"> Condition</a></span>
+          </label>
+          <div class="submit">
+            <button type="submit">Create a new account</button>
+          </div>
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+    </div>
+  </form>
+</div>
+<!-- ==========================END SIGNUP========================== -->
+
+
+<!-- ==========================START LANDING========================== -->
+    <div class="landing" id="home">
+      <div class="text-landing">
+        <h1 class="home_title">Hi <span class="auto-type">Developer</span></h1>
+        <p class="home_discraption">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error odit
+          aspernatur facere!
+        </p>
+        <a href="#" class="home_bou">Get Start</a>
+      </div>
+    </div>
+    <a href="#"> <span class="up">Up</span></a>
+<!-- ==========================END LANDING========================== -->
+
+
+<!-- ==========================START NAV BAR========================== -->
+    <div class="icon-bar">
+      <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="google"><i class="fa fa-google"></i></a>
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/"  class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+<!-- ==========================END NAV BAR========================== -->
+
+
+<!-- ==========================START NEW ONE========================== -->
+    <div class="New" id="news">
+      <div class="text-new">
+        <h3>New</h3>
+        <h2>DEDICATED TO DELIGHT YOU</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error odit
+          aspernatur facere!
+        </p>
+      </div>
+      <div class="container">
+        <div class="packeg">
+          <div class="box">
+            <img src="./image/93868.jpg" width="300px" alt="" />
+            <div class="text-box">
+              <h2>Game1</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
+                odit aspernatur facere!
+              </p>
+              <button><span>Get Start</span></button>
+            </div>
+          </div>
+          <div class="box">
+            <img src="./image/93868.jpg" width="300px" alt="" />
+            <div class="text-box">
+              <h2>Game2</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
+                odit aspernatur facere!
+              </p>
+              <button><span>Get Start</span></button>
+            </div>
+          </div>
+          <div class="box">
+            <img src="./image/93868.jpg" width="300px" alt="" />
+            <div class="text-box">
+              <h2>Game3</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
+                odit aspernatur facere!
+              </p>
+              <button><span>Get Start</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ==========================END NEW ONE========================== -->
+
+
+<!-- ==========================START GALLERY========================== -->
+    <!-- <div class="gallery" id="gallery">
+      <h1>gallery</h1>
+      <div class="container">
+        <div class="paceg-box">
+          <div class="box">
+            <div class="image">
+              <img src="./image/93868.jpg" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="./image/93868.jpg" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="./image/93868.jpg" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="./image/93868.jpg" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="./image/93868.jpg" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="./image/93868.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<!-- ==========================END GALLERY========================== -->
+
+
+<!-- ==========================START NEW TOW========================== -->
+    <div class="New" id="newtow">
+      <div class="text-new">
+        <h3>New</h3>
+        <h2>DEDICATED TO DELIGHT YOU</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error odit
+          aspernatur facere!
+        </p>
+      </div>
+      <div class="container">
+        <div class="packeg">
+          <div class="box">
+            <img src="./image/93868.jpg" width="300px" alt="" />
+            <div class="text-box">
+              <h2>Game1</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
+                odit aspernatur facere!
+              </p>
+              <button><span>Get Start</span></button>
+            </div>
+          </div>
+          <div class="box">
+            <img src="./image/93868.jpg" width="300px" alt="" />
+            <div class="text-box">
+              <h2>Game2</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
+                odit aspernatur facere!
+              </p>
+              <button><span>Get Start</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ==========================END NEW TOW========================== -->
+
+
+<!-- ==========================START SLIDER========================== -->
+<div class="myslider">
+  <div class="slider">
+    <h1>SLIDER</h1>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./image/93868.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./image/alexey-savchenko-k4Akpt5-Sfk-unsplash (1).jpg" width="500px"  style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./image/alexey-savchenko-k4Akpt5-Sfk-unsplash (1).jpg" width="500px"  style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+  </div>
+</div>  
+<!-- ==========================END SLIDER========================== -->
+
+
+<!-- ==========================START PUSH========================== -->
+    <div class="push" id="push">
+      <div class="container">
+        <div class="text">
+          <h2>Start With Us</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error odit aspernatur facere!</p>
+        </div>
+        <div class="price">
+          <div class="price-one-left">
+            <ul>
+              <li class="header">Basic</li>
+              <li>$ 9.99 / year</li>
+              <li>10GB Storage</li>
+              <li>10 Emails</li>
+              <li>10 Domains</li>
+              <li>1GB Bandwidth</li>
+            </ul>
+            <button>Sign Up</button>
+          </div>
+          <div class="price-one-right">
+            <ul>
+              <li class="header">Basic</li>
+              <li>$ 9.99 / year</li>
+              <li>10GB Storage</li>
+              <li>10 Emails</li>
+              <li>10 Domains</li>
+              <li>1GB Bandwidth</li>
+            </ul>
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ==========================END PUSH========================== -->
+
+
+<!-- ==========================START PLAY========================== -->
+      <div class="play" id="play">
+        <div class="imag__play">
+          <img src="./image/93868.jpg" width="500px" height="550px" alt="" />
+        </div>
+        <div class="games">
+          <h2>Game-1
+            <span>80%</span>
+          </h2>
+          <div class="game">
+            <span style="width: 0" data-width="80%"></span>
+          </div>
+          <h2>Game-2
+            <span>50%</span>
+          </h2>
+          <div class="game">
+            <span style="width: 0" data-width="50%"></span>
+          </div>
+          <h2>Game-3
+            <span>20%</span>
+          </h2>
+          <div class="game">
+            <span style="width: 0" data-width="20%"></span>
+          </div>
+        </div>
+      </div>
+<!-- ==========================END PLAY========================== -->
+
+
+<!-- ==========================START ABOUTUS========================== -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="imge-addres">
+          <img src="./image/93868.jpg" width="350px" height="500px" alt="" />
+        </div>
+        <div class="text-about">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+            Error odit aspernatur facere! Lorem ipsum dolor, sit amet <br />
+            consectetur adipisicing elit. Error odit aspernatur facere! Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. <br />
+            Error odit aspernatur facere!
+          </p>
+          <button>Moer</button>
+        </div>
+      </div>
+    </div>
+<!-- ==========================END ABOUTUS========================== -->
+
+
+<!-- ==========================START DESIGN========================== -->
+    <div class="design">
+      <div class="text-design">
+        <h2 class="title-design">Design</h2>
+        <p class="discraption-design">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+          Error odit aspernatur facere!
+        </p>
+        <a class="title-design">Moer</a>
+      </div>
+    </div>
+<!-- ==========================END DESIGN========================== -->
+
+
+<!-- ==========================START CONTACT========================== -->
+    <div class="contact" id="contact">
+      <div class="container">
+          <form action="mailto:Mostafa.D.A.Barakat@gmail.com">
+            <h2>Contact Us</h2>
+            <div class="input-container">
+              <i class="fa fa-user icon"></i>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="Username"
+                name="usrnm"
+              />
+            </div>
+            <div class="input-container">
+              <i class="fa fa-envelope icon"></i>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="Email"
+                name="email"
+              />
+            </div>
+            <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input
+                class="input-field"
+                type="text"
+                placeholder="password"
+                name="password"
+              />
+            </div>
+            <div class="input-container">
+              <i class="fa fa-text-width icon" aria-hidden="true"></i>
+              <textarea name="" id="" cols="300" rows="8"> Text</textarea>
+            </div>
+            <button type="submit" class="btn">submit</button>
+          </form>
+      </div>
+    </div>
+<!-- ==========================END CONTACT========================== -->
+
+
+<!-- ==========================START FOOTER========================== -->
+<footer>
+      <div class="footer-top">
+        <div class="footer-img">
+          <img
+            src="./image/5b680f7ddc6fa8394a12fc7f_logo-spoon-white (1).svg"
+            alt=""
+          />
+        </div>
+        <div class="footer-link">
+          <h4>link</h4>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+        </div>
+        <div class="footer-sochle">
+          <h4>sochle</h4>
+          <a href="#faesbook">faesbook</a>
+          <a href="#faesbook">faesbook</a>
+          <a href="#faesbook">faesbook</a>
+          <a href="#faesbook">faesbook</a>
+        </div>
+      </div>
+      <div class="footer-botoom">
+        <div class="footer-text">
+          <p>
+            Made With &lt;3 By Mostafa
+            <!-- <span>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-facebook-messenger"></i>
+              <i class="fab fa-instagram"></i>
+            </span> -->
+          </p>
+        </div>
+      </div>
+    </footer>
+<!-- ==========================END FOOTER========================== -->
+
+
+<!-- ==========================A JS SCROLLREVEAL LIBRARY========================== -->
+<script src="js/scrollreveal.min.js"></script>
+<!-- ==========================A JS SCROLLREVEAL LIBRARY========================== -->
+
+<!-- ==========================A JS TYPING ANIMATION LIBRARY========================== -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- ==========================A JS TYPING ANIMATION LIBRARY========================== -->
+
+<!-- ==========================MAIN JS========================== -->    
+<script src="JS/main.js"></script>
+<!-- ==========================MAIN JS========================== -->    
+  </body>
+</html>
